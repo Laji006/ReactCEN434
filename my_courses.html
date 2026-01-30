@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Courses</title>
+  <style>
+    :root{
+      --card-radius: 12px;
+      --gap: 18px;
+      --bg: #f7f7fb;
+      --text: #222;
+      --muted: #555;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--text);
+      padding:32px;
+      box-sizing:border-box;
+    }
+    h1{
+      margin:0 0 18px 0;
+      font-size:22px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap:var(--gap);
+    }
+    .course-card{
+      padding:16px;
+      border-radius:var(--card-radius);
+      color:white;
+      box-shadow: 0 6px 18px rgba(20,20,50,0.06);
+      min-height:110px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .course-header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+    }
+    .course-title{
+      font-weight:700;
+      font-size:16px;
+      margin:0 0 6px 0;
+    }
+    .course-code{
+      font-size:13px;
+      opacity:0.95;
+      background:rgba(255,255,255,0.12);
+      padding:6px 8px;
+      border-radius:8px;
+      font-weight:600;
+    }
+    .lecturer{
+      margin-top:8px;
+      font-size:13px;
+      color: rgba(255,255,255,0.92);
+    }
+    .small{
+      font-size:12px;
+      color: rgba(255,255,255,0.88);
+    }
+    .c-1{ background: linear-gradient(135deg,#2D9CDB,#2F80ED); }
+    .c-2{ background: linear-gradient(135deg,#6FCF97,#27AE60); }
+    .c-3{ background: linear-gradient(135deg,#F2994A,#F2C94C); }
+    .c-4{ background: linear-gradient(135deg,#BB6BD9,#9B51E0); }
+    .c-5{ background: linear-gradient(135deg,#EB5757,#FF6B6B); }
+    .c-6{ background: linear-gradient(135deg,#56CCF2,#2F80ED); }
+    .c-7{ background: linear-gradient(135deg,#F6A6B2,#FF8BAA); }
+  </style>
+</head>
+<body>
+  <h1>My Courses</h1>
+  <section class="grid">
+    <article class="course-card c-1"><div class="course-header"><div><h2 class="course-title">CEN434 — Software Programming</h2><div class="small">Level: 400</div></div><div class="course-code">CEN434</div></div><div class="lecturer">Lecturer: Dr. O. Omoruyi</div></article>
+    <article class="course-card c-2"><div class="course-header"><div><h2 class="course-title">CEN416 — Assembly Language Programming</h2><div class="small">Level: 400</div></div><div class="course-code">CEN416</div></div><div class="lecturer">Lecturer: Mrs C. Somefun</div></article>
+    <article class="course-card c-3"><div class="course-header"><div><h2 class="course-title">EIE412 — Control Systems</h2><div class="small">Level: 400</div></div><div class="course-code">EIE412</div></div><div class="lecturer">Lecturer: Dr. A. Awelewa</div></article>
+    <article class="course-card c-4"><div class="course-header"><div><h2 class="course-title">EIE416 — Instrumentation & Measurement</h2><div class="small">Level: 400</div></div><div class="course-code">EIE416</div></div><div class="lecturer">Lecturer: Dr. T. Somefun</div></article>
+    <article class="course-card c-5"><div class="course-header"><div><h2 class="course-title">EIE411 — Computer Organization & Architecture</h2><div class="small">Level: 400</div></div><div class="course-code">EIE411</div></div><div class="lecturer">Lecturer: Engr Ojewande</div></article>
+    <article class="course-card c-6"><div class="course-header"><div><h2 class="course-title">EIE418 — Data Communication & Networking</h2><div class="small">Level: 400</div></div><div class="course-code">EIE418</div></div><div class="lecturer">Lecturer: Prof. O. Kennedy</div></article>
+    <article class="course-card c-7"><div class="course-header"><div><h2 class="course-title">GEC410 — Probability & Statistics</h2><div class="small">Level: 400</div></div><div class="course-code">GEC410</div></div><div class="lecturer">Lecturer: Mr. Joseph </div></article>
+  </section>
+</body>
+</html>
